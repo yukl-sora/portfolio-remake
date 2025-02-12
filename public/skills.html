@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../css/main.css">
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-row">
+                    <a href="../index.html" class="logo"><strong>Freelancer</strong> portfolio</a>
+                    <ul class="nav-list">   
+                        <!-- Нейминг классов выполняется методологией BAM и происходит следующим образом: -->
+                        <!-- class="название-родительского-класса__дочерний элемент" -->
+                       <li class="nav-list__item"><a href="../index.html" class="nav-list__link">Projects</a></li>
+                       <!-- Для нейминга активного класса, добавляется модификатор ...--active -->
+                       <li class="nav-list__item"><a href="./skills.html" class="nav-list__link nav-list__link--active">Skills</a></li>
+                       <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Contacts</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="section">
+            <div class="container">
+                <h1 class="title-1">Skills</h1>
+
+                <ul class="content-list">
+                    <li class="content-list__item">
+                        <h2 class="title-2">Fontend</h2>
+                        <p>JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, NPM, BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents</p>
+                    </li>
+                    <li class="content-list__item">
+                        <h2 class="title-2">Backend</h2>
+                        <p>NodeJS, MySQL, MongoDB, PHP, Laravel</p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <ul class="social">
+                        <li class="social__item"><a href="#"><img src="../src/icons/instagram.svg" alt=""></a></li>
+                        <li class="social__item"><a href="#"><img src="../src/icons/vk.svg" alt=""></a></li>
+                        <li class="social__item"><a href="#"><img src="../src/icons/twitter.svg" alt=""></a></li>
+                        <li class="social__item"><a href="#"><img src="../src/icons/github.svg" alt=""></a></li>
+                        <li class="social__item"><a href="#"><img src="../src/icons/linked-in.svg" alt=""></a></li>
+                    </ul>
+                    <div class="copyright">
+                        <p>© 2025 sample-dev.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+// Importing base styles
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+
+// Importing main styles
+@import "./main-content/navigation";
+@import "./main-content/header";
+@import "./main-content/section";
+@import "./main-content/footer";
+
+// Importing pages styles
+@import "./pages/project";
+@import "./pages/skills";

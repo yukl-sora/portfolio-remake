@@ -1,0 +1,64 @@
+.nav {
+    padding: 20px 0;
+    border-bottom: 1px solid $nav-border-color;
+    background-color: $background-dark-color;
+    color: #FFF;
+}
+
+.nav-row {
+    display: flex; // чтобы div элементы внутри этого класса расположились в один ряд.
+    justify-content: space-between; // распределить элементы по краям контента.
+    align-items: center; // чтобы два элемента встали равносильно по центру относительно друг друга.
+    letter-spacing: normal;
+
+    // для мобильной верстки
+    column-gap: 30px; // чтобы два контейнера (лого и навигация) не прилипли друг к другу.
+    row-gap: 20px; // интервал после переноса контейнера.
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: $white; // так как в родительском классе мы не определяли цвет ссылке, напишем его здесь.
+    font-size: 24px;
+    font-family: $poppins;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $poppins;
+
+    .nav-list__link {
+        color: $white;
+
+        transition: .1s ease-in;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
+
+.nav-list__link--active {
+    position: relative; // применяется для того, чтобы псевдо элемент относился к этому классу.
+
+    &::before {
+        content: "";
+
+        position: absolute; // при отсутствии position: relative у родительского класса, элемент работал бы относительно всей страницы.
+        left: 0; // размещаем по левому краю родительского блока.
+        top: 100%; // размещаем по нижнему краю родительского блока.
+
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $active-link-color;
+    }
+}

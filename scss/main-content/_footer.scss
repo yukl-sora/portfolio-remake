@@ -1,0 +1,23 @@
+.footer {
+    margin-top: auto; // пригвоздить к краю экрана
+    padding: 60px 0 50px;
+    background-color: $background-dark-color;
+    color: $white;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column; // переводим контент в вертикаль
+    align-items: center; // и уравниваем по вертикали
+    row-gap: 27px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.copyright p + p {
+    margin-top: 0.5em;
+}
